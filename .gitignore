@@ -1,0 +1,19 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Entorno y configuración
+.env
+.DS_Store
+Thumbs.db
+
+# Archivos compilados
+dist/
+build/
+coverage/
+
+# Logs y archivos temporales
+logs/
+*.log
+tmp/
