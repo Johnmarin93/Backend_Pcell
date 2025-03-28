@@ -33,7 +33,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-// Obtener ventas por cliente
+// Obtener ventas por cedula del cliente
 router.get("/cliente/:cedula", async (req, res) => {
   try {
     const ventas = await VentaService.ventasPorCliente(req.params.cedula);
