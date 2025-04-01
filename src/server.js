@@ -1,12 +1,12 @@
 const express = require("express");
 const connectDB = require("./config/db");
 const app = express();
-
+const cors = require("cors");
 // Conexión a la base de datos
 connectDB();
 // Habilitar express.json
 app.use(express.json());
-
+app.use(cors());
 // Rutas
 app.use("/api/categorias", require("./presentation/routes/categoriaRoutes"));
 app.use("/api/clientes", require("./presentation/routes/clienteRoutes"));
